@@ -11,7 +11,7 @@ def request(url):
         print(f"Error: {e}")
         pass
     
-target_url = "http://192.168.0.44/mutillidae/index.php?page=dns-lookup.php"
+target_url = "http://target_url.com"
 response = request(target_url)
 
 parsed_html = BeautifulSoup(response.content, "html.parser")
